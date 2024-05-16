@@ -43,13 +43,11 @@ int	isqsafe(int board[10][10], int row, int col)
 	while (i < col)
 		if (board[row][i++])
 			return (0);
-	i = row;
-	j = col;
+	(1) && (i = row, j = col);
 	while (i >= 0 && j >= 0)
 		if (board[i--][j--])
 			return (0);
-	i = row;
-	j = col;
+	(1) && (i = row, j = col);
 	while (i < 10 && j >= 0)
 		if (board[i++][j--])
 			return (0);
